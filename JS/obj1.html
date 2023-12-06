@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script> 
+    let human={
+        name:"tejas",
+        age:23,
+        status:false
+        
+}
+console.log(human)
+console.log(typeof human)
+console.log(human.name)
+
+
+//--------------------------------------Add---------------------------------------------------------
+let mobile={ }
+console.log(mobile)
+mobile.company="samsung"
+mobile.model="4s"
+mobile.price=59999
+mobile.make="japan"
+console.log(mobile)
+
+
+
+//-------------------------------------Modification--------------------------------------------------
+
+
+let country={
+    name:"india",
+    capital:"delhi",
+    ecoCapital:"mumbai",
+    flag:"tricolor",
+    inde:"15-aug-1947"
+}
+console.log(country)
+console.log(country.itCapital)
+country.name="USA"
+country.capital="washington DC"
+country.inde="4-july-17s76"
+country.itCapital="New York"
+console.log(country)
+
+//--------------------------------------Nested Object ------------------------------------------------
+
+let mobile1={
+    iphone:{
+        name:"13pro max",
+        price:3444,
+        rom:256
+    },
+    samsung:{
+        name:"4s",
+        price:7833,
+        rom:128
+    },
+    blackberry:{
+        name:"blackberry diamond",
+        price:49499,
+        rom:64
+    }
+}
+console.log(mobile1)
+console.log(mobile1.iphone)
+console.log(mobile1.samsung.price)
+
+mobile1.iphone.name="15 pro"
+console.log(mobile1)
+
+</script>
+</body>
+</html>

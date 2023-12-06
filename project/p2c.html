@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #parent{
+           
+           margin-left: 250px;
+           
+        }
+        .child {
+            height: 500px;
+            width: 400px;
+            background-color: white;
+            display: inline-block;
+            
+
+        }
+        #head1{
+            font-weight: 300;
+            font-size: 30px;
+            margin-left: 145px;
+            padding-top: 0px;
+
+        }
+        #user{
+            font-size: 50px;
+            color: rgb(194, 191, 191);
+            margin-left: 170px;
+            margin-top: 10px;
+         }
+        #head2{
+            font-size: 28px;
+            text-align: center;
+            text-shadow: 0 2px 4px white;
+            /* margin-top: 50px; */
+            margin-bottom: 93px; 
+        }
+        .input
+        {
+            color: black;
+            margin-bottom: 20px;
+            padding: 4px;
+            width: 220px;
+            height: 32px;
+            border: none;
+            
+            outline: none;
+            border-bottom: 1px solid black;
+            font-family: sans-serif;
+            font-weight: 400px;
+            font-size: 15px;
+            margin-left: 70px;
+            padding-top: 10px;
+        }
+         #p2 {
+            position: absolute;
+            top: 108px;
+            right: 278px;
+          padding: 40px;
+          width: 350px;
+          height: 420px;
+          background-image: url(./background.webp);
+          background-size: cover;
+          background-position: center;
+         
+
+          
+         }
+         #p1{
+            margin-top: 100px;
+         }
+         #submit{
+            margin-bottom: 28px;
+            width: 120px;
+            height: 32px;
+            background: #f44336;
+            border: none;
+        
+            border-radius: 2px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 500;
+            margin-left: 140px;
+            margin-top: 20px;
+            box-shadow: 1px 2px 3px black;
+         }
+         .btn{
+            margin-bottom: 20px;
+            width: 220px;
+            height: 36px;
+            border: none;
+            border-radius: 2px;
+            color: black;
+            font-family: sans-serif;
+            margin-left: 70px;
+            margin-bottom: 30px;
+            
+            
+
+         }
+    
+         #btn1{
+            background-color: #213d75;
+         }
+         #btn2{
+            background-color: #55acee;
+         }
+         #btn3{
+            background-color: #e22f18;
+            
+         }
+      
+    </style>
+</head>
+<body>
+    <main>
+       <div id="parent">                
+            <div id="p1" class="child">
+                <i class="fa fa-user-circle-o" aria-hidden="true" id="user"></i>
+                <h1 id="head1">Sign Up</h1>
+                <input type="text"  class="input" placeholder="Username">
+                <br>
+                <input type="email" class="input" name="" id="" placeholder="Email">
+                <br>
+                <input  type="password"  class="input" name="" id="" placeholder="Password">
+                <br>
+                <input type="password"  class="input" name="" id="" placeholder="Password">
+                <br>
+                <input type="submit" value="SIGN UP" id="submit" placeholder="SIGN UP">
+            </div>
+            <div id="p2" class="child">
+                <h1 id="head2">Sign up with <br> Social Network</h1>
+                <input type="button"  id="btn1" value="Login with Facebook" class="btn">
+                <br>
+                <input type="button" id="btn2" value=" Login with Twitter" class="btn">
+                <br>
+                <input type="button"  id="btn3"value="Login with Google" class="btn">
+           </div>
+        </div>
+
+    </main>
+</body>
+</html>

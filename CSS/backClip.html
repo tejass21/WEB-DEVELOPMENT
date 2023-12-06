@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:20px dotted red;
+            width: 400px;
+            background-color: cyan;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #box2{
+            background-clip: padding-box;
+            padding: 60px;
+        }
+        #box3{
+            background-clip: content-box;
+            padding: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">backgroundclip:border-box (bydeafault) <br>
+        background from border
+    </div>
+    <div class="box" id="box2">backgroundclip:padding-box <br>
+        background from padding
+    </div>
+    <div class="box" id="box3">backgroundclip:content-box <br>
+        background for only content
+    </div>
+
+</body>
+</html>

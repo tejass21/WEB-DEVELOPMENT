@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .parent{
+            height: 500px;
+            width: 250px;
+            background-color: blue;
+            margin: auto;
+            margin-top: 200px;
+            perspective: 1200px;
+
+        }
+        .child{
+            height: 498px;
+            width: 248px;
+            background-color: aliceblue;
+            animation-name: ani2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: left;
+        }
+        @keyframes ani2 {
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform: rotateY(100deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

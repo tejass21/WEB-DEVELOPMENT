@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //map:modify existing array and return modify array 
+        //it iterate through a whole array and return new array with modification
+        let fname=["ajay","jay","vijay","sanjay","digvijay","dhananjay"]
+        console.log(fname)
+        let fullname=fname.map((cValue)=>{
+            return cValue + " patil"
+        })
+        console.log(fullname)
+
+
+        let num=[10,20,30,40,50]
+        console.log(num)
+        let square=num.map((cNum)=>{
+            return Math.pow(cNum,2)
+        })
+        console.log(square)
+       
+       
+        let max=num.map((cNum)=>{
+            return Math.max(cNum)
+        })
+        console.log(max)
+
+        
+        let sqrt=num.map((cNum)=>{
+            return Math.sqrt(cNum)
+        })
+        console.log(sqrt)
+
+
+
+        
+        let ifcon=num.map((cNum)=>{
+            if(cNum>20)
+                {
+                    return cNum
+                }
+        })
+        console.log(ifcon)
+    </script>
+    
+</body>
+</html>

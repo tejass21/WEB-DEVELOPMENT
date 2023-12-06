@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 700px;
+            width: 1600px;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            border: 1px solid;
+            text-align: center;
+        }
+        #box1{
+            transform: scale(2);                      
+        }
+        #box2{
+            transform: scaleY(2);
+        }
+        #box3{
+            transform: scaleX(0.5);
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box" id="box1">Case no 1</div>
+        <div class="box" id="box2">Case no 2</div>
+        <div class="box" id="box3">Case no 3</div>
+    
+          <!-- it get multiple as per value
+    height and width value get change
+scale=2
+h*2
+w*2 -->
+    </div>
+</body>
+</html>

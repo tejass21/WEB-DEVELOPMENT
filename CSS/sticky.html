@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 4000px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            border:1px solid;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+        #box1{
+            position:sticky;
+            top: 300px;
+        }
+        #box3{
+            position: fixed;
+            top: 300px;
+            
+        }
+        #box5{
+            position: static;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Box  1 sticky</div>
+    <div class="box" id="box2">Box  2 </div>
+    <div class="box" id="box3">Box  3 fixed</div>
+    <div class="box" id="box4">Box  4</div>
+    <div class="box" id="box5">Box  5</div>
+    <div class="box" id="box6">Box  6</div>
+</body>
+</html>

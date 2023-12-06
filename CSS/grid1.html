@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .parent{
+            height: 600px;
+            width: 600px;
+            background-color: dodgerblue;
+            border: 1px solid;
+            margin: 100px auto;
+            display: grid;
+            gap: 10px;
+             /*      gap:10px 20px (rowGap ColumnGap) 
+                     gap:10px (for both row and column)
+                     row-gap: 30px;
+                     column-gap:20px   */
+            
+            padding: 10px;
+            grid-template-areas: 'header header header header header header'
+                                'menu main main main main right'
+                                'menu main main main main right'
+                                'menu footer footer footer footer footer';
+                                
+                                
+        }
+        .items{
+            background-color: yellow;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            line-height: 150px;
+        }
+        #items1{
+            grid-area: header;
+
+        }
+        #items2{
+            grid-area: menu;
+        }
+        #items3{
+            grid-area: main;
+        }
+        #items4{
+            grid-area: right;
+        }
+        #items5{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="items" id="items1">HEADER</div>
+        <div class="items" id="items2">MENU</div>
+        <div class="items" id="items3">MAIN</div>
+        <div class="items" id="items4">RIGHT</div>
+        <div class="items" id="items5">FOOTER</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #blub{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="blub" ></div>
+    <button onclick="On()">On</button>
+    <button onclick="Off()">Off</button>
+    <script>
+        let ele=document.getElementById("blub")
+        function On(){
+            ele.style.backgroundColor="yellow"
+        }
+
+        function Off(){
+            ele.style.backgroundColor="white";
+        }
+    </script>
+</body>
+</html>

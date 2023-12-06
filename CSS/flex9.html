@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 100vh;
+            width: 100%;
+            background-color: dodgerblue;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border: 1px solid;
+            display: flex;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            line-height: 50px;
+            border: 1px solid;
+        }
+        #child1{
+            align-items: start;
+        }
+        #child2{
+            align-items: center;
+            justify-content: center;
+        }
+        #child3{
+            align-items: center;
+            justify-content: end;
+        }
+        #child4{
+            align-items: end;
+            justify-content: center;
+        }
+        #child5{
+            justify-content: end;
+            align-items: end;
+        }
+        #child6{
+            
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="child1">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+        <div class="child" id="child2">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+        <div class="child" id="child3">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+        <div class="child" id="child4">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+        <div class="child" id="child5">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+        <div class="child" id="child6">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+    </div>
+</body>
+</html>

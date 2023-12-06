@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="updown" onmousedown="getDown()" onmouseup="getUp()">Up and Down</div>
+    <script>
+        let ele=document.getElementById("updown")
+        function getUp(){
+            ele.innerHTML="onmouseup()"
+            ele.style.color="red"
+        }
+        function getDown(){
+            ele.innerHTML="onmousedown()"
+            ele.style.color="green"
+        }
+    </script>
+</body>
+</html>

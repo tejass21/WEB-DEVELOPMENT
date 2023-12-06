@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="car" onchange="getchange()">
+        <option value="mercedes">mercedes</option>
+        <option value="audi">audi</option>
+        <option value="lambo">lambo</option>
+        <option value="land rover">land rover</option>
+    </select>
+    <p id="print" >
+
+    </p>
+    <div id="box"></div>
+    
+
+    <script>
+        let vehicle=document.getElementById("car")
+        let print1=document.getElementById("print")
+        let image=document.getElementById("box")
+        function getchange(){
+           if(vehicle.value=="mercedes"){
+            print1.innerHTML="Congratulation you selected "+vehicle.value
+            print1.style.color="red"
+            image.style.backgroundImage="url('./img2.jpg')"
+           }
+           else if(vehicle.value=="audi"){
+            print1.innerHTML="Congratulation you selected "+vehicle.value
+            print1.style.color="red"
+            image.style.backgroundImage="url('./blue.jpg')"
+           }
+           else if(vehicle.value=="lambo"){
+            print1.innerHTML="Congratulation you selected "+vehicle.value
+            print1.style.color="red"
+            image.style.backgroundImage="url('./cake.jpg')"
+
+           }
+           else if(vehicle.value=="land rover"){
+            print1.innerHTML="Congratulation you selected "+vehicle.value
+            print1.style.color="red"
+            image.style.backgroundImage="url('./img1.jpg')"
+
+           }
+      
+         
+            
+        }
+    </script>
+</body>
+</html>

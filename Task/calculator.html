@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <input type="text" name="" id="inp1"><br>
+ <input type="text" name="" id="inp2"><br>
+ <button  onclick="getAdd()">Add</button>
+ <button  onclick="getSub()">Subt</button>
+ <button  onclick="getMult()">Mult</button>
+ <button  onclick="getDiv()">Div</button>
+ <p id="answ"></p>
+ <script>
+    var num1,num2,num3
+    num1=Number(document.getElementById("inp1").value)
+    num2=Number(document.getElementById("inp2").value)
+   
+    function getAdd(){
+        num3=num1+num2
+        console.log(num3)
+        document.getElementById("answ").value= num3
+    }
+    function getSub(){
+        num3=num1-num2
+        console.log(num3)
+        document.getElementById("answ").value= num3
+    }
+    function getMult(){
+        num3=num1*num2
+        console.log(num3)
+        document.getElementById("answ").value= num3
+    }
+    function getDiv(){
+        num3=num1/num2
+        console.log(num3)
+        document.getElementById("answ").value= num3
+    }
+ </script>
+</body>
+</html>

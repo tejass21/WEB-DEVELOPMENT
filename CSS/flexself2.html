@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 600px;
+            width: 600px;
+            border: 1px solid;
+            background-color: aqua;
+            margin: auto;
+            margin-top: 60px;
+            display: flex;
+        }
+        .child{
+            height: 70px;
+            width: 70px;
+            border: 1px solid;
+            background-color: red;
+        }
+        #parent1{
+            flex-flow: row wrap;
+        }
+        #parent2{
+            flex-flow: column wrap;
+        }
+        #child2{
+            align-self:end;
+        }
+        #child3{
+            align-self: center;
+        }
+        #child4{
+            align-self: end;
+        }
+        #child6{
+            align-self: center;
+        }
+        #child12{
+            align-self:end;
+        }
+        #child13{
+            align-self: center;
+        }
+        #child14{
+            align-self: end;
+        }
+        #child16{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent1">
+        <div class="child" id="child1">child1</div>
+        <div class="child" id="child2">child2</div>
+        <div class="child" id="child3">child3</div>
+        <div class="child" id="child4">child4</div>
+        <div class="child" id="child5">child5</div>
+        <div class="child" id="child6">child6</div>
+    </div>
+    <div class="parent" id="parent2">
+        <div class="child" id="child11">child11</div>
+        <div class="child" id="child12">child12</div>
+        <div class="child" id="child13">child13</div>
+        <div class="child" id="child14">child14</div>
+        <div class="child" id="child15">child15</div>
+        <div class="child" id="child16">child16</div>
+    </div>
+</body>
+</html>

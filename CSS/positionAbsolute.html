@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 80px;
+            background-color: blue;
+            color: white;
+            display: inline-block;
+        }
+        #box1{
+            position: absolute;
+            /* box2 is get hide behind box1  to see hidden box use z-index:-1*/
+            z-index: 1;
+
+        }
+        #box3{
+            position: absolute;
+            top: 100px;
+        }
+        #box4{
+            position: absolute;
+            left: 100px;
+        }
+        #box5{
+            position: absolute;
+            right: 100px;
+        }
+        #box6{
+            position: absolute;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Box1(front)</div>
+    <div class="box" id="box2">Box2(hidden)</div>
+    <div class="box" id="box3">Box3(top)</div>
+    <div class="box" id="box4">Box4(left)</div>
+    <div class="box" id="box5">Box5(right)</div>
+    
+    <div class="box" id="box6">Box6(bottom) </div>
+</body>
+</html>

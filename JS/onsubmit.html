@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="getSubmit()">
+        <label for="">Name</label>
+        <input type="text" name="" id="inp1">
+        <label for="">Email</label>
+        <input type="email" name="" id="inp2">
+        <input type="submit" value="">
+        <script>
+            let name=document.getElementById("inp1")
+            let email=document.getElementById("inp2")
+            function getSubmit(){
+                if(name.value=="sejal" || name.value=="SEJAL" && email.value=="sejalnehtet@gmail.com"){
+                    alert("form successfully submited")
+                }
+                else{
+                    alert("invalid input")
+                }
+                        }
+        </script>
+    </form>
+</body>
+</html>

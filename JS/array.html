@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // --------------------using literals
+        let arr1=[10,true,"hello"]
+        console.log(arr1)
+        arr1[6]="index6"
+        console.log(arr1)
+        console.log(arr1[5])
+
+        let arr2=[()=>{
+            console.log("arrow function index 1")
+        }, {name:"obj" , type:"method"}]
+
+        console.log(arr2)
+        arr2[1].name="updated obj"
+        console.log(arr2)
+
+        
+        //-----------------using new keyword
+        let arr3=new Array()
+        arr3[0]="hello"
+        arr3[4]=true;
+        console.log(arr3)
+
+
+        //---------------------using array constructor
+
+        let arr4=new Array(2,4,6,"hello")
+        console.log(arr4)
+    </script>
+</body>
+</html>

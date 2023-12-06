@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a="hi"
+        function parent(){
+            console.log(a)
+            var b="how are you"
+            child1()
+            function child1(){
+                console.log(a+b)
+                var c="this is  roshan "
+                child11()
+                function child11(){
+                    console.log(a+b+c)
+                    var d="lets talk"
+                    child111()
+                    function child111(){
+                        console.log(a+b+c+d)
+                    }
+                }
+            }
+        }
+        parent()
+    </script>
+</body>
+</html>

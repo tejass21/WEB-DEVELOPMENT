@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //push(): it is used to add the elements from the last index.
+        //note: we can add multiple elements simultaneously.
+        console.log("push")
+        let arr=[10,3,4,5]
+        console.log(arr)
+        arr.push(60)
+        console.log(arr)
+        arr.push(true, false,null)
+        console.log(arr)
+
+        //pop(): ut us used to delete an element from last index.
+        // note: we cant delete more than one element simultaneously.
+        console.log("pop")
+
+        let pop=[10,20,30]
+        console.log(pop)
+        //console.log(pop.pop()) -> 30
+        pop.pop()
+        console.log(pop)
+
+
+        //unshift(): it is used to  add array element from start index
+         //note: we can add multiple elements simultaneously.
+         console.log("unshift")
+
+        let unshift=[10,20,30,40]
+        unshift.unshift("in-0","in-1")
+        console.log(unshift)
+
+        //shift(): ut us used to delete an element from start index.
+        // note: we cant delete more than one element simultaneously.
+        console.log("shift")
+
+        let shift=[10,20,30,40]
+        console.log(shift.shift())
+        console.log(shift)
+
+        //includes(): it is used to check whether the element is present or not 
+        //if it is present then the method return true or false
+        console.log("includes")
+        let player=["virat","dhoni","rohit"]
+        console.log(player.includes("dhoni"))
+        console.log(player.includes("harbhajan"))
+
+        //indexof(): it is used to check the inde og an active element . if element is not present then it return -1
+        console.log("indexof")
+
+        console.log(player.indexOf("virat"))
+        console.log(player.indexOf("harbhajan")) 
+        
+        //reverse()
+        let arr2=[10,23,14,56,22]
+        console.log(arr2.reverse())
+
+        //sort()
+        let arr3=[2,2000,4,0,1,22,11,0]
+        console.log(arr3.sort())
+
+        let arr4=["a","aaaa","aaba","acaa","abba"]
+        console.log(arr4.sort())
+
+
+        
+    </script>
+</body>
+</html>

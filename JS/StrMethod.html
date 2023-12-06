@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String by using new keyword
+        let str1=new  String("hello") // heap area string connstant pool
+        console.log(typeof str1)
+        console.log(str1)
+
+        // length
+        console.log(str1.length)
+
+        //toUpperCase()
+        let uppercase="hello"
+        console.log(uppercase.toUpperCase())
+
+        //toLowerCase()
+        let lower="HELLO2"
+        console.log(lower.toLowerCase())
+
+        //charAt()
+        console.log(str1.charAt(0))
+
+        //chatCodeAt(): ASCII VALUE
+        console.log(str1.charCodeAt(2))
+
+        //replace()
+        let replace="   pune to goa    "
+        console.log(replace.replace("goa","mumbai"))
+        console.log(replace.replace(" ",""))
+        console.log(replace.replaceAll(" ",""))
+        
+
+        //repeat()
+        let repeat=" India to usa"
+        console.log(repeat.repeat(5))
+
+        //includes():  particular special char or str is present or not. boolean
+        let inc="includes"
+        console.log(inc.includes("in"))
+
+
+        //indexof():it is used to get index of sp character
+        let ind="indexof"
+        console.log(ind.indexOf("o"))
+
+        //startswith():
+        let start="startwith"
+        console.log(start.startsWith("s"))
+
+        //endswith():
+        console.log(start.endsWith("h"))
+
+        //slice(start index,last index)
+        let slice="javascript"
+        console.log(slice.slice(1,4))
+        console.log(slice.slice(-4))
+
+        //substr()
+        let sbt="subString"
+        console.log(sbt.substring(1,5))
+
+        //trim():remove space from start and end
+        let trim=" banana abc  "
+        console.log(trim)
+        console.log(trim.trim())
+
+        //trimstart()
+        console.log(trim.trimStart())
+
+        //trimEnd()
+        console.log(trim.trimEnd())
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

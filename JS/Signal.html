@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            height: 600px;
+            width: 250px;
+            background-color: grey;
+            border: 1px solid;
+        }
+        .bulb{
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: white;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="bulb" id="bulb1"></div>
+        <div class="bulb" id="bulb2"></div>
+        <div class="bulb" id="bulb3"></div>
+        <script>
+            var signal=prompt("enter your input")
+            if(signal=="stop" )
+            {
+                document.getElementById("bulb1").style.backgroundColor="red"
+            }
+            else if(signal=="caution" )
+            {
+                document.getElementById("bulb2").style.backgroundColor="orange"
+            }
+           else if(signal=="start" )
+            {
+                document.getElementById("bulb3").style.backgroundColor="green"
+            }
+        </script>
+    </div>
+</body>
+</html>

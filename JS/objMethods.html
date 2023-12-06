@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mobile={
+            company:"samsung",
+            price:75555,
+            model:"4s",
+
+            make:"india"
+        }
+        console.log(mobile)
+
+        //--------------------Delete--------------------
+        // delete(mobile.company)
+        // console.log(mobile)
+
+
+        // to access keys we use keys() and for values -> values()
+       // console.log(Object.keys(mobile))
+       // console.log(Object.values(mobile))
+
+
+        let obj1={
+            company:"tata",
+            model:"safari"
+
+        }
+        let obj2={
+            make:"india",
+            price:333333
+        }
+        let obj3={
+            color:"white",
+            model:"safari stom"
+        }
+        console.log(Object.assign(obj1,obj2,obj3))   //assign ->merge two or more obj
+
+        //entries(): it is use to convert obj to array
+        let obj4={
+            name:"abc",
+            age:34
+        }
+        console.log(Object.entries(obj4))
+
+        //seal(): it is used to lock obj. we can't add new key and value but we can modify existing key
+        let seal={
+            name:"seal",
+            type:"method"
+        }
+        console.log(seal)
+        seal.status="true"
+        console.log(seal)
+        seal.name="seal updated"
+        console.log(seal)
+
+
+        //freeze(): it is used to lock obj. we can't add new key and value and also modification not possible
+        let freeze={
+            name:"freeze",
+            type:"method"
+        }
+        console.log(Object.freeze(mobile))
+        freeze.name="updated freeze"
+        freeze.status="freezed"
+        console.log(freeze)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+            .parent{
+            height: 150px;
+            width: 200px;
+            border: 1px solid;
+            background-color: yellow;
+            display: flex;
+          
+                /* cross axis-start end center  */
+                
+        }
+        .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+          
+
+            border: 1px solid;
+            color: white;
+        }
+        #parent1{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+        }
+        #parent2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        #parent6{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #parent3{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            flex-direction: column-reverse;
+        }
+        #parent4{
+            display: flex;
+            justify-content: space-between;
+            
+            flex-wrap: wrap-reverse;
+            flex-direction: column;
+        }
+        #parent5{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+   <div class="super">
+    <div class="parent" id="parent1">
+        <div class="box" id="box11">1</div>
+        <div class="box" id="box12">2</div>
+        <div class="box" id="box13">3</div>
+        <div class="box" id="box14">4</div>
+        <div class="box" id="box15">5</div>
+        <div class="box" id="box16">6</div>
+    </div>
+    <div class="parent" id="parent2">
+        <div class="box" id="box21">7</div>
+        <div class="box" id="box22">8</div>
+        <div class="box" id="box23">9</div>
+        <div class="box" id="box24">10</div>
+        <div class="box" id="box25">11</div>
+        <div class="box" id="box26">12</div>
+
+    </div>
+    <div class="parent" id="parent3">
+        <div class="box" id="box31">13</div>
+        <div class="box" id="box32">14</div>
+        <div class="box" id="box33">15</div>
+        <div class="box" id="box34">16</div>
+        <div class="box" id="box35">17</div>
+        <div class="box" id="box36">18</div>
+
+    </div>
+    <div class="parent" id="parent4">
+        <div class="box" id="box41">19</div>
+        <div class="box" id="box42">20</div>
+        <div class="box" id="box43">1</div>
+        <div class="box" id="box44">2</div>
+        <div class="box" id="box45">3</div>
+        <div class="box" id="box46">4</div>
+
+    </div>
+    <div class="parent" id="parent5">
+        <div class="box" id="box51">1</div>
+        <div class="box" id="box52">2</div>
+        <div class="box" id="box53">3</div>
+        <div class="box" id="box54">4</div>
+        <div class="box" id="box55">5</div>
+        <div class="box" id="box56">6</div>
+
+    </div>
+    <div class="parent" id="parent6">
+        <div class="box" id="box61">1</div>
+        <div class="box" id="box62">2</div>
+        <div class="box" id="box63">3</div>
+        <div class="box" id="box64">4</div>
+        <div class="box" id="box65">5</div>
+        <div class="box" id="box66">6</div>
+    </div>
+   </div></body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jsonObject={
+            "key1":"value1",
+            "key2":20,
+            "key3":true,
+            "key4":function(){
+                console.log("key4")
+            },
+
+        }
+        console.log(jsonObject)
+        jsonObject.key6="new value"
+        console.log(jsonObject)
+        delete jsonObject.key6
+        console.log(jsonObject)
+        
+    </script>
+</body>
+</html>

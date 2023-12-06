@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let prom1=new Promise((res,rej)=>{
+            setTimeout(()=>{
+                let arr=[10,20,30,40,50]
+                res(arr)
+                
+               },3000)
+        })
+        let prom2=new Promise((res,rej)=>{
+            setTimeout(()=>{
+                let arr=[11,12,13,14,14]
+                
+                rej("error")
+               },3000)
+        })
+        let prom3=new Promise((res,rej)=>{
+            setTimeout(()=>{
+                let arr=[21,22,23,24,25]
+                res(arr)
+                
+               },3000)
+
+        })
+        async function biodata(){
+            let data1=await prom1;
+            console.log(data1)
+            let data2=await prom2;
+            console.log(data2)     //If we reject promise furthur promises not get execute
+            let data3=await prom3;
+            console.log(data3)
+
+        }
+        biodata()
+    </script>
+</body>
+</html>

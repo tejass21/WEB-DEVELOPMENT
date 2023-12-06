@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn">Click Here!!!!!</button>
+    <script>
+        let ele=document.getElementById("box")
+        let but=document.getElementById("btn")
+        function getFun(){
+            ele.style.height="200px"
+            ele.style.width="200px"
+            ele.style.border="1px solid"
+        }
+         but.addEventListener("click",getFun)
+        // but.addEventListener("click",getFun)
+        // but.addEventListener("mouseover",getFun)
+        // but.addEventListener("mouseout",getFun)
+        // but.addEventListener("copy",getFun)
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 700px;
+            width: 100%;
+
+        }
+        #parent
+        {
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            background-color: black;
+
+
+
+        }
+        #child{
+            height: 300px;
+            width: 300px;
+            background-image: url(landscape-g718d1c25b_640.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        #child:hover{
+            transition-duration: 3s;
+            transition-property: height,width;
+            border: 1px solid;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            transition-timing-function: linear;
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

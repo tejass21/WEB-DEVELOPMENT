@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print"></p>
+    <p id="print2"></p>
+    <p id="print3"></p>
+   <script>
+    //filter()
+    let age=[2,3,4,55,23,67,2,64,30]
+    document.getElementById("print").innerHTML=age.filter(getAge)
+    function getAge(cAge){
+        return cAge>=18; // it return values 
+    }
+    //or
+    document.getElementById("print2").innerHTML=age.filter((cAge)=>{
+        return cAge>=18;
+    })
+    
+
+    document.getElementById("print3").innerHTML=age.map(getAge2)
+    function getAge2(cAge){
+        return cAge>=18; // it return true and false
+    }
+   </script> 
+</body>
+</html>

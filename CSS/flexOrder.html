@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            height: 400px;
+            width: 700px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: aqua;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .child{
+            height: 70px;
+
+            width: 70px;
+            line-height: 100px;
+            background-color: blue;
+            color: white;
+            border:1px solid;
+            text-align: center;
+        }
+        #child1{
+            order:7;
+        }
+        #child6
+        {
+            order:-4;
+        }
+        #child7{
+            order:5;
+        }
+        #child8{
+            order:5;
+        }
+        #child3{
+            order:10;
+        }
+        #child2{
+            order:10;
+        }
+        #child4{
+            order:1;
+        }
+        #child5{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent1">
+        <div class="child" id="child1">Child 1</div>
+        <div class="child" id="child2">Child 2</div>
+        <div class="child" id="child3">Child 3</div>
+        <div class="child" id="child4">Child 4</div>
+        <div class="child" id="child5">Child 5</div>
+        <div class="child" id="child6">Child 6</div>
+        <div class="child" id="child7">Child 7</div>
+        <div class="child" id="child8">Child 8</div>
+        <div class="child" id="child9">Child 9</div>
+    </div>
+    
+</body>
+</html>

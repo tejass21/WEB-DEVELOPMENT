@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function parent(){
+            debugger;   //use for debugging breakpoint
+                console.log("parent started")
+                child1()                                 
+                function child1(){
+                    console.log("child1 started")
+                    child2()
+                    console.log("child1 ended")
+                }
+                function child2(){
+                    console.log("child2 started")
+                    child3()
+                    console.log("child2 ended")
+                }
+                function child3(){
+                    console.log("child3 started")
+                    child4()
+                    console.log("child3 ended")
+                }
+                function child4(){
+                    console.log("child4 started")
+                    
+                    console.log("child4 ended")
+                }
+                console.log("parent ended   ")
+        }
+        parent()
+    </script>
+   
+</body>
+</html>

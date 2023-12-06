@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 300px;
+            width: 300px;
+            background-color: gray;
+            border: 1px solid;
+        }
+        #child{
+            height: 300px;
+            width: 300px;
+            background-image: url(./landscape-g718d1c25b_640.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: perspective(800px) rotateX(45deg);
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

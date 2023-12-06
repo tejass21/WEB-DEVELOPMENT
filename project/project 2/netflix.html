@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./bg.jpg) ;
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        #logo {
+            height: 100px;
+            width: 150px;
+        }
+
+        nav {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+        
+        }
+        select{
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            opacity: 0.5;
+            
+            color: white;
+            right: 500px;
+           position: relative;
+           top: 30px;
+           left: 1000px;
+            
+        }
+        #sign{
+            height: 40px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            padding: 4px 16px;
+            position: relative;
+            top: 30px;
+            left: 1020px;
+            border-color: red;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px grey;
+          
+        }
+      
+        #pair{
+            width: 100%;
+            height: 615px;
+            background-color: black;
+            opacity: 0.5;
+            
+            color: white;
+            margin-top: 0px;
+            display: grid;
+            justify-content: center;
+            
+            align-content: center;
+        }
+        h1{
+            font-size: 48px;
+            color: white;
+            font-weight: bolder; 
+            
+        }
+         #para3{
+            font-size: 20px;
+        }
+        #email{
+            height: 60px;
+            width: 380px;
+            color: transparent;
+            line-height: 1.5rem;
+            padding: 1.5rem 1rem 0.5rem;
+        }
+        #row1{
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: white;
+            
+        }
+        #col1{
+            text-align: center;
+
+        }
+      video{
+        height: 400px;
+        width: 550px;
+      }
+      img{
+        height: 480px;
+        width: 590px;
+      }
+      h1{
+
+      }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img id="logo" src="./net2.png" alt="">
+            <select>
+                <option label="English">English</option>
+                <option label="Hindi">Hindi</option>
+            </select>
+            <button id="sign">Sign up</button>
+        </nav>
+            <div id="pair">
+                <h1 id="para1">Unlimited movies, TV shows and more
+                </h1>
+                <h3 id="para2">
+                    Watch anywhere. Cancel anytime.
+                </h3>
+                <div id="para3">Ready to watch? Enter your email to create or restart your membership.</div>
+                <form action="" id="pair2">
+                    <input id="email" type="text" placeholder="Email Address    ">
+                    <button type="submit">Get Started</button>
+                </form>
+                </div>
+            </div>
+            <div id="pair2">
+                <div id="row1">
+                    <div id="col1">
+                        <h1>Enjoy on your Tv</h1>
+                        <h3>Watch on smart TVs, PlayStation,Xbox, <br> Chromecase,Apple TV,Blu-ray players and more</h3>
+                    </div>
+                     <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"></video>
+                </div>
+
+                <hr>
+                <div id="row1">
+                    <img src="./images/feature-2.png" alt="">
+                    <div id="col1">
+                        <h1>Download your show to watch offline</h1>
+                        <h3>Save your favourites easily and always have something to watch</h3>
+                    </div>
+                    
+                </div>
+                <hr>
+                <div id="row1">
+                    <div id="col1">
+                        <h1>Watch everywhere</h1>
+                        <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV</h3>
+                    </div>
+                    <img src="./images/feature-3.png" alt="">
+                </div>
+                <hr>
+                <div id="row1">
+                    <img src="./images/feature-4.png" alt="">
+                    <div id="col1">
+                        <h1>Create profiles for kids </h1>
+                        <h3>Send children on adventures with ther gavourite characters in a space made just <br> for them - free with your membhership</h3>
+                   
+                    </div>
+                   
+                </div>
+                </div>
+            </div>
+
+       
+    </main>
+</body>
+
+</html>

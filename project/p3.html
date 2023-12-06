@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color:rgba(27, 31, 34);
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+    #event {
+      height: 700px;
+      width: 600px;
+      /* background-color: rgba(27, 31, 34, 0.80); */
+      margin-left: 450px;
+      
+    }
+    label{
+      color: rgba(141, 144, 146, 0.8);
+      font-size: large;
+      /* font-weight: bold; */
+    }
+    input{
+      background-color: rgba(27, 31, 34, 0.80);
+      
+        border: 1px solid gray;
+        outline: none;
+        height: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    h1{
+      color: wheat;
+    }
+    h3{
+      color: white;
+    }
+    #l1{
+      height: 100px;
+      width: 400px;
+    }
+    #submit{
+      height: 50px;
+      width: 300px;
+      background-color: white;
+      box-shadow: 1px 2px 3px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="event">
+    <h3>MAY 25, 2021</h3>
+    <h1>Join the event</h1>
+    <table>
+      <form action="">
+        <tr>
+          <td>
+            <label for="">First Name</label><br>
+            <input type="text" placeholder="Enter your first name">
+          </td>
+          <td>
+            <label for="">Last Name</label><br>
+            <input type="text" placeholder="Enter your last name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Buisness Email</label><br>
+            <input type="text" placeholder="Enter your Email">
+          </td>
+          <td>
+            <label for="">Title</label><br>
+            <input type="text" placeholder="What is your job title?">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Company Name</label><br>
+            <input type="text" placeholder="Where do you work?">
+          </td>
+          <td>
+            <label for="">Company Size</label><br>
+            <input type="text" placeholder="Select">
+          </td>
+        </tr>
+        <tr>
+          
+          <td colspan="2"><label for="">What are you hoping to learn about?</label><br>
+          <input type="text" placeholder="Message" id="l1">
+          </td>
+          
+        </tr>
+        <tr>
+          <td colspan="2"><input type="checkbox" name="" id=""><label for="">  I would like to recieve Emails about future <br> Webinars</label></td>
+        </tr>
+        <tr><td colspan="2">
+          <input type="submit" value="Registration" id="submit">
+        </td></tr>
+      </form>
+    </table>
+  </div>
+</body>
+
+</html>
+
+

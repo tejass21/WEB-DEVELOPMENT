@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var variable(scope of var variable -> global)
+        //declaration possible
+        var a;
+        console.log(a)
+        //Initialization possible
+        a=20
+        console.log(a)
+         //Redeclaration possible
+        var a=49;
+        console.log(a)
+        //ReInitialization possible
+
+        a=67;
+        console.log(a)
+        //variable hoistinh - we can intitialized the variable before its declation is called hoisting
+        hoist="hosisting is possible"
+        var hoist;
+        console.log(hoist)
+        if(true)
+        {
+        var scope=10;
+        }
+      console.log(scope) //scope of var variable is global level .we can access outside block
+    </script>
+</body>
+</html>

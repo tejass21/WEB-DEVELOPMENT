@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cone{
+            height: 400px;
+            width: 400px;
+            border:1px solid;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        #cone1{
+           
+            background-image: conic-gradient(red 0deg,red 45deg,orange 45deg, orange 90deg,yellow 90deg,yellow 135deg, green 135deg,green 180deg, blue 180deg, blue 225deg,pink 225deg, pink 270deg,purple 270deg,purple 315deg,hotpink 315deg,hotpink 360deg);
+        }
+        #cone2{
+          
+            background-image: conic-gradient(red 0deg, red 45deg,green 45deg,green 135deg,blue 135deg,blue 225deg,yellow 225deg,yellow 315deg,red 315deg,red 360deg) ;
+        }
+        #cone3{
+     
+            background-image: conic-gradient(red 0deg,red 135deg ,green 135deg,green 270deg,yellow 270deg,yellow 315deg,red 315deg);
+        }
+        #cone4{
+            
+            background-image: repeating-conic-gradient(blue 0deg 10deg,red 10deg 20deg,yellow 20deg 30deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cone" id="cone1"></div>
+    
+    <div class="cone" id="cone2"></div>
+    
+    <div  class="cone" id="cone3"></div>
+    
+    <div  class="cone" id="cone4"></div>
+</body>
+</html>

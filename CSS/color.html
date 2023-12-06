@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+        }
+        #color1{
+            background-color: aqua;
+        }
+        #color2{
+            background-color: rgb(200, 50, 250);
+        }
+        #color3{
+            background-color: #ddd543;
+        }
+        #color4{
+            background-color: hsl(45deg, 50%, 70%);
+        }
+        #color5{
+            background-color: hsla(230deg, 50%, 70%, 0.6);   
+            /*(hue(deg 0-360),saturation(%),lightness(%),alpha) alpha range is from 0 to 1  */
+        }
+        #parent{
+            background-color: red;
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="color" id="color1"></div>
+    <div class="color" id="color2"></div>
+    <div class="color" id="color3"></div>
+    <div class="color" id="color4"></div>
+    <br><br>
+    <div id="parent">
+        <div class="color" id="color5"></div>
+    </div>
+</body>
+</html>

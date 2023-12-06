@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="print" ondblclick="doubleclick()">Double Click</div>
+    <script>
+        let ele=document.getElementById("print")
+        function doubleclick(){
+            ele.innerHTML="This is ondbclick() event listner"
+            ele.style.color="red"
+        }
+       
+    </script>
+</body>
+</html>

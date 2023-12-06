@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .parent{
+            height: 600px;
+            width: 600px;
+            background-color: dodgerblue;
+            border: 1px solid;
+            margin: 100px auto;
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-areas: 'i1 i1 i2 i2 i2 i3 i3'
+                                 'i1 i1 i4 i4 i4 i3 i3 '
+                                 'i5 i5 i5 i5 i5 i5 i5 '
+                                 'i6 i6 i7 i7 i7 i8 i8';
+                                
+        }
+        .items{
+            background-color: yellow;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            line-height: 150px;
+        }
+        #items1{
+            grid-area: i1;
+
+        }
+        #items2{
+            grid-area: i2;
+        }
+        #items3{
+            grid-area: i3;
+        }
+        #items4{
+            grid-area: i4;
+        }
+        #items5{
+            grid-area:i5;
+        }
+        #items6{
+            grid-area: i6;
+        }
+        #items7{
+            grid-area: i7;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="parent">
+      <div class="parent">
+        <div class="items" id="items1">items1</div>
+        <div class="items" id="items2">items2</div>
+        <div class="items" id="items3">items3</div>
+        <div class="items" id="items4">items4</div>
+        <div class="items" id="items5">items5</div>
+        <div class="items" id="items6">items6</div>
+        <div class="items" id="items7">items7</div>
+      
+      </div>
+    </div>
+</body>
+</html>`

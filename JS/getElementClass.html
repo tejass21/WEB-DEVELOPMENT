@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEADING1</h1>
+    <p class="para"></p>
+    <h1>HEADING2</h1>
+    <p class="para"></p>
+    <h1>HEADING3</h1>
+    <p class="para"></p>
+    <button onclick="getPara1()">Para1</button>
+    <button onclick="getPara2()">Para2</button>
+    <button onclick="getPara3()">Para3</button>
+    <script>
+
+        let ele=document.getElementsByClassName("para")
+        function getPara1(){
+            ele[0].innerHTML=Date()
+            ele[0].style.color="red"
+        }
+        function getPara2(){
+            ele[1].innerHTML=Date()
+            ele[1].style.color="green"
+        }
+        function getPara3(){
+            ele[2].innerHTML=Date()
+            ele[2].style.color="blue"
+        }
+    </script>
+    
+</body>
+</html>

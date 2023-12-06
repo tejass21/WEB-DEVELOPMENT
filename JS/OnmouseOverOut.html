@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" onmouseover="getOver()" onmouseout="getOut()">Hello</div>
+    <div id="print"></div>
+    <script>
+        let ele=document.getElementById("box")
+        let print1=document.getElementById("print")
+        function getOver(){
+            print1.innerHTML="this is onmouseover effect"
+            print1.style.color="blue"
+        }
+        function getOut(){
+            print1.innerHTML="this is pnmouseout effect"
+            print1.style.color="red"
+        }
+    </script>
+</body>
+</html>

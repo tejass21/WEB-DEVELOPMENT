@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrObj={
+            fun:function (){
+                console.log("function")
+            },
+            arr:[10,20,30,40],
+            status:"single"
+        }
+        console.log(arrObj)
+        console.log(arrObj.arr[2]);
+        arrObj.arr[3]="updated index"
+        console.log(arrObj)
+        arrObj.arr[4]={
+            name:"object",
+
+            type:"arrayObject"
+        }
+
+        console.log(arrObj.status[0])
+
+    </script>
+</body>
+</html>

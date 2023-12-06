@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string:string is immutable in nature.
+        let bike="Rx100"  // stack area string commmon pool
+        console.log(bike)
+        bike="R15"
+        console.log(bike) // replacement is possible
+
+        bike[0]="k"
+        console.log(bike) // modification is not possible
+
+    </script>
+</body>
+</html>

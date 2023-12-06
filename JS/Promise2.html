@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pro=new Promise((res,rej)=>{
+            
+            
+            setTimeout(()=>{
+                let gift="iphone";
+              //  res(gift)
+                rej("color not avialble")
+            },6000)
+       
+        })
+        pro.then((bGift)=>{
+            console.log(`promise completed ${bGift}`)
+        }).catch((error)=>{
+            console.log(error)
+        })
+    </script>
+</body>
+</html>

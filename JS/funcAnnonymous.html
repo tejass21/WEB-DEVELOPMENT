@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+
+        }
+        button{
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="pos()">top</button>
+    <button onclick="pos1()">left</button>
+    <script>
+        let pos=function(){
+            let ele=document.getElementById("box")
+            ele.style.position="relative"
+            ele.style.top="200px"
+            ele.style.backgroundColor=prompt("enter the color")
+        }
+        let pos1=function(){
+            let ele=document.getElementById("box")
+            ele.style.position="relative"
+            ele.style.left="200px"
+            ele.style.backgroundColor=prompt("enter the color")
+        }
+    </script>
+</body>
+</html>

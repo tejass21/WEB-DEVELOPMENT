@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let variable(scope of let variable -> block)
+        //declaration possible
+        let a; 
+        console.log(a)
+        
+        //Initialization possible
+        a=20
+        console.log(a)
+        
+        //Redeclaration not possible
+       // let a=49;
+       // console.log(a)
+
+        //ReInitialization possible
+        a=67;
+        console.log(a)
+        
+        //variable hoisting - we can intitialized the variable before its declaration is called hoisting(not possible)
+       // hoist="hosisting is not possible"
+        //let hoist;
+       // console.log(hoist)
+
+       if(true)
+       {
+         let scope=10;
+       }
+     //  console.log(scope)    -- scope of let variable is block level .we cant access outside block
+    </script>
+</body>
+</html>

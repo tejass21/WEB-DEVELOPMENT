@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+        <input type="text" name="" id="inp1" onblur="getblur()">
+        <p id="print"></p>
+
+    
+    <script>
+        let ele=document.getElementById("inp1")
+        let print1=document.getElementById("print")
+        function getblur(){
+            ele.style.backgroundColor="blue"
+            ele.style.color="white"
+            ele.value=ele.value.toUpperCase()
+            print1.innerHTML=ele.value
+         
+        }
+    </script>
+    
+</body>
+</html>

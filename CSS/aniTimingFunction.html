@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 150px;
+            line-height: 100px;
+            background-color: red;
+            animation-name: timefun;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin-top: 30px;
+        }
+        #box1{
+            animation-timing-function:linear;
+        }
+        #box2{
+            animation-timing-function: ease;
+        }
+        #box3{
+            animation-timing-function: ease-in;
+        }
+        #box4{
+            animation-timing-function: ease-out;
+        }
+        #box5{
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes timefun {
+            from{
+                width: 150px;
+            }  
+            to{
+            width: 100%;
+
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Linear</div>
+    <div class="box" id="box2">Ease </div>
+    <div class="box" id="box3">Ease in </div>
+    <div class="box" id="box4">Ease out </div>
+    <div class="box" id="box5">Ease in out</div>
+</body>
+</html>

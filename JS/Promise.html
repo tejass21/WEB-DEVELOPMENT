@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let pro=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                let shadi="I promise u, I'll never leave you"
+               // resolve(shadi)
+                reject("abbu nahi manenge")
+            },3000)
+        });
+        pro.then((shadiFix)=>{
+            console.log(`mene kaha tha${shadiFix}`)
+        }).catch((error)=>{
+            console.log("humara cast alag hai "+error)
+        })
+//setTimeOut(function,timeout)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fun1(){
+            console.log("function 1")
+        }
+        function fun2(){
+            console.log("function 2")
+            setTimeout(fun1,5000)  //5000->delay time
+        }
+        function fun3(callback){
+            console.log("function 3")
+            setTimeout(callback,3000)
+        }
+        fun3(fun2)
+    </script>
+    
+</body>
+</html>

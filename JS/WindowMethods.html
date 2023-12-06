@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let name=prompt("enter your name")
+    let age=confirm(name+" are you 18+")
+    let ind=confirm(name+" are you indian")
+    if(age && ind){    
+             alert("Welcome to voting session ")
+    }
+    else{
+            alert("you are not eligible")
+     }
+
+
+     //or
+
+     let userName=prompt("enter your name")
+     let age2=prompt("enter your age")
+     if(age>=18 && confirm(`${userName} are an indian citizen`)){
+        alert("welcome to voting")
+     }
+     else{
+        alert("you are not eligible")
+ }
+
+     
+    </script> 
+</body>
+</html>

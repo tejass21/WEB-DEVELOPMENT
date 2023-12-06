@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function obj(name,age,status)
+        {
+            this.name=name
+            this.age=age
+            this.status=status
+        }
+        let emp1=new obj("sejal",21,false)
+        console.log(emp1)
+        let emp2=new obj("ankita",20,false)
+        console.log(emp2)
+        
+        emp1.name="jay"
+        console.log(emp1)
+
+        emp2.proff="software engg"
+        console.log(emp2)
+    </script>
+</body>
+</html>

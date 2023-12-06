@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        #submit{
+            padding: 10px 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <form action="" onsubmit="getSubmit()" oncopy="getCopy()"  onpaste="getPaste()"  oncut="getCut()"  onmouseover="getOver()" onmouseout="getOut()">
+            <label for="">Name</label>
+            <input type="text" name="" id="inp1">
+            <br>
+            <label for="">Email</label>
+            <input type="email" name="" id="inp2">
+            <br>
+            <input type="submit" value="Submit" id="submit">
+        </form> 
+           
+    </div>
+        <script>
+            let name=document.getElementById("inp1")
+            let email=document.getElementById("inp2")
+            let sub=document.getElementById("submit")
+            function getSubmit(){
+                if(name.value=="sejal" || name.value=="SEJAL" && email.value=="sejalnehtet@gmail.com"){
+                    alert("form successfully submited")
+                }
+                else{
+                    alert("invalid input")
+                }
+            }
+            function getCopy(){
+            
+                alert("your text is successfully copied")
+            }
+            function getCut(){
+            
+                alert("your text is successfully cut")
+            }
+            function getPaste(){
+            
+                alert("your text is successfully paste")
+            }
+            function getOver(){
+                sub.style.borderRadius="30px"
+                sub.style.boxShadow="2px 2px 2px"
+                sub.style.backgroundColor="blue"
+            }
+            function getOut(){
+                sub.style.borderRadius="0px";
+                sub.style.backgroundColor="red"
+            }
+        </script>
+    
+</body>
+</html>
